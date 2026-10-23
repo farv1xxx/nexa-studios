@@ -638,6 +638,102 @@ footer {
 .light-theme .language-option:hover {
     background-color: #EDE9FE;
 }
+.project-image {
+    width: 100%;
+    max-width: 350px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-info {
+    width: 100%;
+    text-align: center;
+}
+
+.project-label {
+    display: inline-block;
+    color: #A78BFA;
+    background-color: rgba(109, 40, 217, 0.15);
+    border: 1px solid #6D28D9;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px;
+}
+
+.project-info h3 {
+    font-size: 25px;
+    margin: 5px 0 12px;
+}
+
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto 18px;
+    max-width: 450px;
+}
+
+.project-tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.project-tech span {
+    color: #C4B5FD;
+    background-color: #211A32;
+    border: 1px solid #49356D;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 13px;
+}
+
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    background-color: #6D28D9;
+    border: 1px solid #8B5CF6;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #7C3AED;
+    border-color: #A78BFA;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(109, 40, 217, 0.3);
+}
+
+.light-theme .project-tech span {
+    background-color: #F5F3FF;
+    color: #5B21B6;
+    border-color: #DDD6FE;
+}
+
+.light-theme .project-label {
+    background-color: #EDE9FE;
+    color: #5B21B6;
+}
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 30px;
@@ -954,12 +1050,45 @@ footer {
                     <p>Передаємо готовий сайт разом з усіма файлами та кодом.</p>
                 </div>
              </div>
-        <div id="work">
-            <h2>Наші роботи</h2>
-            <div class="work-card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="work-icon"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"/><path d="M20.054 15.987H3.946"/></svg>
-                <p class="work-text">Тут з'явиться ваш проєкт. Наразі ми оновлюємо портфоліо.</p>
+       
+<div id="work">
+    <h2 data-i18n="workTitle">Наші роботи</h2>
+
+    <div class="work-card project-card">
+        <div class="project-preview">
+    <img
+        src="https://i.postimg.cc/JhZ5dcW0/lad-i-liniia.png"
+        alt="Сайт Лад і Лінія"
+        class="project-image"
+    >
+</div>
+
+        <div class="project-info">
+            <p class="project-label">PROJECT 01</p>
+
+            <h3 data-i18n="projectTitle">Лад і Лінія</h3>
+
+            <p class="project-description" data-i18n="projectDescription">
+                Сучасний сайт із продуманим дизайном та зручним інтерфейсом.
+            </p>
+
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
             </div>
+
+            <a
+                href="https://farv1xxx.github.io/lad-i-liniya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-button"
+                data-i18n="projectButton"
+            >Переглянути сайт ↗</a>
+        </div>
+    </div>
+</div>
+
         </div>
         <div id="contacts">
             <h2>Контакти</h2>
